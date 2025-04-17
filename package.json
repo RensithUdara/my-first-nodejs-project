@@ -9,10 +9,6 @@
   "author": "Rensith Udara Gonalagoda",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.19",
     "my-first-project": "file:"
-  },
-  "devDependencies": {
-    "express": "^5.1.0"
   }
 }
