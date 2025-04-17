@@ -13,9 +13,14 @@ console.log('Start of script!');
 
 let count = 0;
 
-setInterval(() => {
+const id = setInterval(() => {
     console.log('Hello every 2 seconds! - ' + count);
     count++;
+
+    if (count === 5) {
+        clearInterval(id);
+        console.log('Interval cleared!');
+    }
 }
     , 2000);
 
