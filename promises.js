@@ -34,7 +34,7 @@
 const checkClass = () => {
     return new Promise((resolve, reject) => {
         setTimeout (() => {
-            const haveClassWednesday = true; // Simulate whether you have class on Wednesday
+            const haveClassWednesday = false; // Simulate whether you have class on Wednesday
             if (haveClassWednesday) {
                 resolve("Promise resolved successfully!");
             } else {
@@ -51,6 +51,8 @@ checkClass().then(result => {
     return result; // Return the result for the next then() block
 }).then(result => {
     console.log('Next then block:', result); // Handle the result from the previous then() block
+}).catch(error => {
+    console.log(error); // Handle rejection
 });
 
 console.log('End of script!');
