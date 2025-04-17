@@ -12,7 +12,12 @@ const checkClass = new Promise((resolve, reject) => {
     return promise;
 });
 
-console.log(checkClass());
+checkClass.then(result => {
+    console.log(result); // Handle successful resolution
+}).catch(error => {
+    console.log(error); // Handle rejection
+});
+
 
 // const promise = new Promise((resolve, reject) => {
 //     const success = true; // Simulate success or failure
