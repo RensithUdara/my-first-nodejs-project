@@ -48,6 +48,9 @@ console.log('Start of script!');
 
 checkClass().then(result => {
     console.log(result); // Handle successful resolution
+    return result; // Return the result for the next then() block
+}).then(result => {
+    console.log('Next then block:', result); // Handle the result from the previous then() block
 });
 
 console.log('End of script!');
