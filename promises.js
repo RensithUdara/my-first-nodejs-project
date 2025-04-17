@@ -46,6 +46,8 @@ const checkClass = () => {
 
 console.log('Start of script!');
 
-checkClass();
+checkClass().then(result => {
+    console.log(result); // Handle successful resolution
+});
 
 console.log('End of script!');
