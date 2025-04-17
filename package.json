@@ -9,6 +9,7 @@
   "author": "Rensith Udara Gonalagoda",
   "license": "ISC",
   "dependencies": {
-    "my-first-project": "file:"
+    "my-first-project": "file:",
+    "readline-sync": "^1.4.10"
   }
 }
