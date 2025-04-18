@@ -43,10 +43,20 @@ const fs = require('fs');
 //     }
 // });
 
-fs.rename('./modules/data.txt', './modules/data1.txt', (err) => {
+// fs.rename('./modules/data.txt', './modules/data1.txt', (err) => {
+//     if (err) {
+//         console.error('Error renaming file:', err);
+//     } else {
+//         console.log('File renamed successfully!');
+//     }
+// });
+
+
+fs.access('./modules/data1.txt', fs.constants.F_OK, (err) => {
     if (err) {
-        console.error('Error renaming file:', err);
+        console.error('File does not exist:', err);
     } else {
-        console.log('File renamed successfully!');
+        console.log('File exists!');
     }
-});
+}
+);
