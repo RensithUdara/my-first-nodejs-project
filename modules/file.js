@@ -26,7 +26,7 @@
 
 const fs = require('fs');
 
-fs.writeFileSync('./modules/data.txt', 'Hello, world!', (err) => {
+fs.writeFileSync('./modules/data.txt', ' Hello, Rensith!', {flag: "a"} , (err) => {
     if (err) {
         console.error('Error writing file:', err);
     } else {
