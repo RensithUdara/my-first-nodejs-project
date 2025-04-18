@@ -35,10 +35,18 @@ const fs = require('fs');
 // });
 
 
-fs.appendFile('./modules/data.txt', ' Hello, Rensith!', (err) => {
+// fs.appendFile('./modules/data.txt', ' Hello, Rensith!', (err) => {
+//     if (err) {
+//         console.error('Error appending to file:', err);
+//     } else {
+//         console.log('File appended successfully!');
+//     }
+// });
+
+fs.rename('./modules/data.txt', './modules/data1.txt', (err) => {
     if (err) {
-        console.error('Error appending to file:', err);
+        console.error('Error renaming file:', err);
     } else {
-        console.log('File appended successfully!');
+        console.log('File renamed successfully!');
     }
 });
