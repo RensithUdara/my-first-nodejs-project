@@ -60,3 +60,21 @@ fs.access('./modules/data1.txt', fs.constants.F_OK, (err) => {
     }
 }
 );
+
+fs.mkdir('./modules/newDir', { recursive: true }, (err) => {
+    if (err) {
+        console.error('Error creating directory:', err);
+    } else {
+        console.log('Directory created successfully!');
+    }
+}   
+);
+
+fs.readdir('./modules', (err, files) => {
+    if (err) {
+        console.error('Error reading directory:', err);
+    } else {
+        console.log('Directory contents:', files);
+    }
+}   
+);
