@@ -13,12 +13,23 @@
 
 // console.log('End of script!');
 
-const fs = require('fs').promises;
+// const fs = require('fs').promises;
 
-fs.readFile('./modules/data.txt', 'utf-8')
-    .then((data) => {
-        console.log('File contents:', data);
-    })
-    .catch((err) => {
-        console.error('Error reading file:', err);
+// fs.readFile('./modules/data.txt', 'utf-8')
+//     .then((data) => {
+//         console.log('File contents:', data);
+//     })
+//     .catch((err) => {
+//         console.error('Error reading file:', err);
+// });
+
+
+const fs = require('fs');
+
+fs.writeFileSync('./modules/data.txt', 'Hello, world!', (err) => {
+    if (err) {
+        console.error('Error writing file:', err);
+    } else {
+        console.log('File written successfully!');
+    }
 });
