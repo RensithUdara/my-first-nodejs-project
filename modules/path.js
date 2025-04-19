@@ -12,4 +12,6 @@ const testPath = 'C:/Users/Rensith/OneDrive/Documents';
 
 // console.log(path.parse(__filename)); // Get the path object of the current file
 
-console.log(path.isAbsolute(testPath)); // Check if the path is absolute
+// console.log(path.isAbsolute(testPath)); // Check if the path is absolute
+
+console.log(path.join(__dirname, 'test.txt')); // Join the current directory with a file name
