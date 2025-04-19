@@ -16,4 +16,4 @@ const testPath = 'C:/Users/Rensith/OneDrive/Documents';
 
 // console.log(path.join(__dirname, 'test.txt')); // Join the current directory with a file name
 
-console.log(path.resolve(__dirname, 'test.txt')); // Resolve the current directory with a file name
+console.log(path.resolve(__dirname, "Rensith" ,'test.txt')); // Resolve the current directory with a file name
